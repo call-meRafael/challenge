@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Login</title>
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <video autoplay muted loop class="video-background">
+        <source src="video-bg/0810.mp4" type="video/mp4">
+        Seu navegador não suporta vídeos.
+    </video>
+    <section class="form-container">
+        <div class="container">
+            <form action="" method="get">
+                <h1>Entre em contato</h1>
+                <p>Preencha o formulário abaixo para entrar em contato com a gente!</p>
+                <div class="input-single">
+                    <input type="text" name="nome" id="nome-box" 
+                    placeholder="Digite seu nome completo" 
+                    required 
+                    autofocus 
+                    autocomplete="name" 
+                    pattern="^(?=.*[A-ZÀ-ÖÁÉÍÓÚÃÕÇ])(?=.*[a-zà-öáéíóúãõç])[A-Za-zÀ-ÖÁÉÍÓÚÃÕÇà-öáéíóúãõ\s\-ç]{2,}$" class="input-field">
+                    <label for="nome-box">Nome completo</label>
+                </div>
+                <div class="input-single">
+                    <input type="email" name="nome" id="email-box"
+                    placeholder="Digite seu email"
+                    required
+                    autocomplete="email"
+                    pattern="/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/gm">
+                    <label for="email-box">Email</label>
+                </div>
+                <div class="input-single">
+                    <input type="tel" name="nome" id="tel-box"
+                    placeholder="XX XXXXX-XXXX"
+                    title="Telefone com DDD"
+                    required
+                    autocomplete="tel"
+                    pattern="[0-9]{2}\s?[0-9]{4,5}-?[0-9]{4}">
+                    <label for="tel-box">Telefone</label>
+                </div>
+                <div class="btn-send">
+                    <input type="submit" value="Enviar">
+                </div>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
