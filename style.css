@@ -39,7 +39,14 @@ form{
 }
 
 form h1{
+    color: #01ebc4e3;
+    text-shadow: 1px 2px 3px black;
     text-align: center;
     font-size: 1.8rem;
     text-transform: uppercase;
+}
+
+form p{
+    text-align: center;
+    margin: 20px 0;
 }
