@@ -47,6 +47,47 @@ form h1{
 }
 
 form p{
+    color: rgba(255, 255, 255, 0.849);
+    font-size: 1.0rem;
+    text-shadow: 1px 1px 1px black;
     text-align: center;
     margin: 20px 0;
+}
+
+.input-single{
+    margin: 40px;
+    border: none;
+}
+
+.input-field{
+    width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+}
+
+label{
+    font-weight: bolder;
+    text-transform: lowercase;
+}
+
+.btn-send input{
+    background: #01ebc4e3;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+}
+
+@media (max-width:420px) {
+    .form-container{
+        transform: scale(0.9);
+        transition: all 0.3s ease-in-out;
+    }
+
+    .btn-send input{
+        padding: 10px 40px;
+        float: inline-end;
+    }
 }
